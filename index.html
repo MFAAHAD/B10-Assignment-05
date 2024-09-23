@@ -8,6 +8,32 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <header class="border-b-2 sticky ">
+        <div class=" bg-orange-50">
+            <div class="max-w-screen-xl mx-auto mb-5 pt-2 pb-4">
+                <div class=" flex justify-between mb-6 ">
+                    <div>
+                        <button class="btn bg-lime-400 px-5 text-black text-xl"> Blog </button>
+                    </div>
+                    <div class="flex justify-center items-center ">
+                        <img src="assets/logo.png" alt="logo">
+                        <h2 class="font-bold text-2xl ml-4">Donate Bangladesh</h2>
+                    </div>
+                    <div class="flex justify-center items-center ">
+                        <img src="assets/coin.png" alt="coin">
+                        <h2 class="font-bold text-xl ml-2"><span id="fixed-balance">5600</span>BDT</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class=" mb-5 flex gap-5 mx-auto justify-center">
+            <button id="donation"
+                class="bg-lime-400 px-5 py-2 rounded-lg font-bold text-black text-xl ">Donation</button>
+            <button id="history" class="border-2 px-5 py-2 rounded-lg text-gray-700 
+              hover:text-black hover:bg-slate-200 hover:font-bold ">History</button>
+        </div>
+    </header>
     
 </body>
 </html>
