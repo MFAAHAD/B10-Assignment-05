@@ -6,14 +6,26 @@
     <title>donate-Bangladesh</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        .font-family {
+
+            font-family: "Lexend", sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-optical-sizing: auto;
+
+        }
+    </style>
 </head>
-<body>
-    <header class="border-b-2 sticky ">
+<body class="font-family>
+
+     <header class= "border-b-2 sticky">
         <div class=" bg-orange-50">
             <div class="max-w-screen-xl mx-auto mb-5 pt-2 pb-4">
                 <div class=" flex justify-between mb-6 ">
                     <div>
-                        <button class="btn bg-lime-400 px-5 text-black text-xl"> Blog </button>
+                        <button class="btn bg-lime-400 px-5 text-black text-xl" onclick="blog()"> Blog </button>
                     </div>
                     <div class="flex justify-center items-center ">
                         <img src="assets/logo.png" alt="logo">
@@ -29,11 +41,41 @@
 
         <div class=" mb-5 flex gap-5 mx-auto justify-center">
             <button id="donation"
-                class="bg-lime-400 px-5 py-2 rounded-lg font-bold text-black text-xl ">Donation</button>
-            <button id="history" class="border-2 px-5 py-2 rounded-lg text-gray-700 
-              hover:text-black hover:bg-slate-200 hover:font-bold ">History</button>
+                class="bg-lime-400 px-5 py-2 rounded-lg font-bold text-black text-xl">Donation</button>
+            <button id="history" class="border-2 px-5 py-2 rounded-lg">History</button>
         </div>
     </header>
+    <main class="mt-10">
+    
+    <!-- Noakhali Section-->
+    
+        <div class="max-w-screen-xl mx-auto flex gap-5 p-7 border-2 rounded-xl mb-8">
+            <div class="w-1/2"><img src="assets/noakhali.png" class="w-full" alt=""></div>
+            <div class="w-1/2 h-fit">
+                <button class="btn text-lg font-medium mb-5"><img src="assets/coin.png" alt="">
+                    <span id="donate-new-balance-2">1000</span>BDT</button>
+                <div class="flex flex-col gap-16">
+                    <div>
+                        <h2 class="text-black font-bold text-xl mb-5">Donate for Flood at Noakhali, Bangladesh</h2>
+                        <p class="text-xl"> The recent floods in Noakhali have caused significant damage to homes
+                            infrastructure. Your donation will help provide essential supplies and to those affected
+                            by
+                            this disaster. Every contribution, big or small, makes difference. Please join us in
+                            supporting the relief efforts and making a positive impact on the lives of those in
+                            need.
+                        </p>
+                    </div>
+                    <div class="grid grid-cols-1 gap-2">
+                        <input id="donation-amount-2" class="bg-slate-100 border rounded-lg p-4" type="text" name=""
+                            placeholder="Write Donation Amount">
+                        <button id="donate-button-2" class="bg-lime-300 font-bold p-4 rounded-xl"> Donate
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+    </main>
     
 </body>
 </html>
