@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <header class=" border-b-2 border-white sticky top-0 backdrop-blur-lg  z-50">
+    <div class=" bg-orange-50">
+        <div class="max-w-screen-xl mx-auto mb-5 pt-2 pb-3 ">
+            <div class=" flex justify-between mb-2 lg:mb-3  mt-2 lg:mt-3 ">
+                <div>
+                    <button class=" hidden lg:flex bg-lime-400 px-5 py-2 rounded-md font-semibold text-black text-[15px] lg:text-xl" onclick="home()"> Home </button>
+                </div>
+                <div class=" hidden lg:flex justify-center items-center ">
+                    <div>
+                        <img class="" src="assets/logo.png" alt="">
+                    </div>
+                    <h2 class="font-bold text-xs lg:text-2xl lg:ml-4">Donate Bangladesh</h2>
+                </div>
+                <div class="  hidden lg:flex justify-center items-center ">
+                    <img src="assets/coin.png" alt="">
+                    <h2 class=" font-medium text-lg ml-2"><span id="fixed-balance" class="font-bold lg:text-xl">65400</span> BDT</h2>
+                </div>
+                    <!-- Responsive -->
+                    <div class=" lg:hidden grid grid-cols-5 mx-auto px-5 items-center justify-center mt-5">
+                      <div class=" mx-auto flex -ml-3items-center col-span-5  mb-5">
+                          <div>
+                              <img class=" w-7/12 items-center justify-center " src="assets/logo.png" alt="">
+                          </div>
+                          <div><h2 class="font-bold text-xl lg:text-2xl lg:ml-4">Donate Bangladesh</h2></div>
+                      </div>
+
+                      <div class="col-span-2 mr-3">
+                          <button class=" bg-lime-400 px-5 py-2 rounded-md font-semibold text-black text-[15px] lg:text-xl" onclick="home()"> Home </button>
+                      </div>
+                      <div class="col-span-1">
+
+                      </div>
+                      <div class="flex justify-center items-center col-span-2 ml-3 ">
+                          <img src="assets/coin.png" alt="">
+                          <h2 class="font-medium text-[15px]  ml-2"><span id="fixed-balance " class="text-xl font-bold">65400</span> BDT</h2>
+                      </div>
+                  </div>
+                     
+ 
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div class=" lg:max-w-screen-xl p-7 mx-auto grid grid-cols-1 gap-2 ">
+        <div><h1 class="text-black text-2xl  lg:text-4xl font-bold mb-5">Important FAQ?</h1></div>
+   
+        <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-lg lg:text-xl font-medium ">What is the DOM?
+
+        </div>
+        <div class="collapse-content">
+          <p class="text-sm lg:text-lg">The DOM is a programming interface for web documents, representing the structure of a webpage</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-lg lg:text-xl font-medium">How to create a new element in the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-sm lg:text-lg">Use document.createElement('tagName').
+        </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-lg lg:text-xl font-medium">How to select an element by its ID? </div>
+        <div class="collapse-content">
+          <p class="text-sm lg:text-lg">Use document.getElementById('elementId').
+        </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-lg lg:text-xl font-medium">How to remove an element from the DOM?</div>
+        <div class="collapse-content">
+          <p class="text-sm lg:text-lg">Use element.remove();
+        </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-lg lg:text-xl font-medium">How to change an element's style?</div>
+        <div class="collapse-content">
+          <p class="text-sm lg:text-lg">Use element.style.property = 'value';
+        </p>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="js/blog.js"></script>
+
+
+
+    
+</body>
+</html>
