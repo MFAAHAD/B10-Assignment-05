@@ -1,6 +1,4 @@
-function blog() {
-   window.location.href = '/blog.html';
-}
+
 
 document.getElementById('donate-button').addEventListener('click', function (event) {
    event.preventDefault();
