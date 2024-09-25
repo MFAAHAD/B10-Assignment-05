@@ -5,6 +5,7 @@ function blog() {
 document.getElementById('donate-button').addEventListener('click', function (event) {
    event.preventDefault();
    handleDonation('donation-amount', 'fixed-balance', 'donate-new-balance', 'Feni Flood Relief');
+   
 });
 
 document.getElementById('donate-button-2').addEventListener('click', function (event) {
