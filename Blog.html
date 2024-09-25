@@ -14,7 +14,7 @@
         <div class="max-w-screen-xl mx-auto mb-5 pt-2 pb-3 ">
             <div class=" flex justify-between mb-2 lg:mb-3  mt-2 lg:mt-3 ">
                 <div>
-                    <button class=" hidden lg:flex bg-lime-400 px-5 py-2 rounded-md font-semibold text-black text-[15px] lg:text-xl" onclick="home()"> Home </button>
+                    <a href="index.html"><button id="home" class=" hidden lg:flex bg-lime-400 px-5 py-2 rounded-md font-semibold text-black text-[15px] lg:text-xl" > Home </button></a>
                 </div>
                 <div class=" hidden lg:flex justify-center items-center ">
                     <div>
@@ -24,7 +24,7 @@
                 </div>
                 <div class="  hidden lg:flex justify-center items-center ">
                     <img src="assets/coin.png" alt="">
-                    <h2 class=" font-medium text-lg ml-2"><span id="fixed-balance" class="font-bold lg:text-xl">65400</span> BDT</h2>
+                    <h2 class=" font-medium text-lg ml-2"><span id="fixed-balance" class="font-bold lg:text-xl">7500</span> BDT</h2>
                 </div>
                     <!-- Responsive -->
                     <div class=" lg:hidden grid grid-cols-5 mx-auto px-5 items-center justify-center mt-5">
@@ -43,7 +43,7 @@
                       </div>
                       <div class="flex justify-center items-center col-span-2 ml-3 ">
                           <img src="assets/coin.png" alt="">
-                          <h2 class="font-medium text-[15px]  ml-2"><span id="fixed-balance " class="text-xl font-bold">65400</span> BDT</h2>
+                          <h2 class="font-medium text-[15px]  ml-2"><span id="fixed-balance " class="text-xl font-bold">7500</span> BDT</h2>
                       </div>
                   </div>
                      
@@ -67,14 +67,14 @@
 
         </div>
         <div class="collapse-content">
-          <p class="text-sm lg:text-lg">The DOM is a programming interface for web documents, representing the structure of a webpage</p>
+          <p class="text-sm lg:text-lg">The DOM (Document Object Model) is a programming interface that represents the structure of a web page, allowing scripts to access and manipulate its elements dynamically.</p>
         </div>
       </div>
       <div class="collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-lg lg:text-xl font-medium">How to create a new element in the DOM?</div>
         <div class="collapse-content">
-          <p class="text-sm lg:text-lg">Use document.createElement('tagName').
+          <p class="text-sm lg:text-lg">To create a new element in the DOM, use document.createElement('tagName') and then append it using parentElement.appendChild(newElement).
         </p>
         </div>
       </div>
@@ -82,7 +82,7 @@
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-lg lg:text-xl font-medium">How to select an element by its ID? </div>
         <div class="collapse-content">
-          <p class="text-sm lg:text-lg">Use document.getElementById('elementId').
+          <p class="text-sm lg:text-lg">To select an element by its ID using a CSS selector, use document.querySelector('#yourID').
         </p>
         </div>
       </div>
@@ -90,7 +90,7 @@
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-lg lg:text-xl font-medium">How to remove an element from the DOM?</div>
         <div class="collapse-content">
-          <p class="text-sm lg:text-lg">Use element.remove();
+          <p class="text-sm lg:text-lg">To remove an element from the DOM, use element.parentNode.removeChild(element) or element.remove().
         </p>
         </div>
       </div>
@@ -98,14 +98,14 @@
         <input type="radio" name="my-accordion-2" />
         <div class="collapse-title text-lg lg:text-xl font-medium">How to change an element's style?</div>
         <div class="collapse-content">
-          <p class="text-sm lg:text-lg">Use element.style.property = 'value';
+          <p class="text-sm lg:text-lg">To change an element's style, use element.style.propertyName = 'value'; (e.g., element.style.backgroundColor = 'red';).
         </p>
         </div>
       </div>
 
     </div>
 
-    <script src="js/blog.js"></script>
+    <script src="JavaScript/blog.js"></script>
 
 
 
