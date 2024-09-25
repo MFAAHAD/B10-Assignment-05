@@ -1,9 +1,17 @@
 
+function showModal() {
+   document.getElementById('open-model').classList.remove('hidden');
+}
+
+
+function hideModal() {
+   document.getElementById('open-model').classList.add('hidden');
+}
+
 
 document.getElementById('donate-button').addEventListener('click', function (event) {
    event.preventDefault();
    handleDonation('donation-amount', 'fixed-balance', 'donate-new-balance', 'Feni Flood Relief');
-   
 });
 
 document.getElementById('donate-button-2').addEventListener('click', function (event) {
@@ -16,30 +24,31 @@ document.getElementById('donate-button-3').addEventListener('click', function (e
    handleDonation('donation-amount-3', 'fixed-balance', 'donate-new-balance-3', 'Aid for Injured in Quota Movement');
 });
 
-
 function handleDonation(inputId, balanceId, sectionBalanceId, sectionName) {
    const inputDonate = parseFloat(document.getElementById(inputId).value);
    const fixedBalance = parseFloat(document.getElementById(balanceId).innerText);
-   if(isNaN(inputDonate)){
-      alert('Enter a valid amount')
-      return 
+   
+   if (isNaN(inputDonate) || inputDonate <= 0) {
+      alert('Enter a valid donation amount greater than zero');
+      hideModal(); 
+      return; 
    }
-  
 
-
-   if (inputDonate > 0 && inputDonate <= fixedBalance) {
+   if (inputDonate <= fixedBalance) {
        const sectionBalance = parseFloat(document.getElementById(sectionBalanceId).innerText);
        document.getElementById(sectionBalanceId).innerText = inputDonate + sectionBalance;
        document.getElementById(balanceId).innerText = fixedBalance - inputDonate;
 
        
+       showModal();
+       
        addToHistory(sectionName, inputDonate);
-   } else if (inputDonate > fixedBalance) {
-       alert('Not enough balance');
    } else {
-       alert('Invalid Donation Amount');
+       alert('Not enough balance');
+       hideModal();
    }
 }
+
 
 function getCurrentTime() {
    let now = new Date();
@@ -58,3 +67,7 @@ function addToHistory(sectionName, donationAmount) {
    const historyContainer = document.getElementById('history-list');
    historyContainer.insertBefore(historyItem, historyContainer.firstChild);
 }
+
+document.getElementById('close-model').addEventListener('click', function() {
+   hideModal();
+});
